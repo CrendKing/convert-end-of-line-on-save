@@ -1,0 +1,39 @@
+{
+    "name": "convert-end-of-line-on-save",
+    "displayName": "Convert End Of Line On Save",
+    "publisher": "crendking",
+    "description": "",
+    "version": "0.1.0",
+    "license": "See license in LICENSE.txt",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "end-of-line",
+        "eol",
+        "save"
+    ],
+    "icon": "media/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CrendKing/convert-end-of-line-on-save"
+    },
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "bun run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "*",
+        "@types/vscode": "*",
+        "@vscode/vsce": "*",
+        "typescript": "*"
+    }
+}
